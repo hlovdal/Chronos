@@ -92,7 +92,7 @@ DateTime Weekly::previous(const DateTime & dt) const {
 	return thePrev;
 
 }
-DateTime Weekly::applyTo(const DateTime & dt, Direction dir) const {
+DateTime Weekly::applyTo(const DateTime & dt, Direction /*dir*/) const {
 	Chronos::TimeElements els(dt.asElements());
 
 	/*

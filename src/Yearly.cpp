@@ -66,7 +66,7 @@ DateTime Yearly::previous(const DateTime& dt) const {
 	return thePrev;
 }
 
-DateTime Yearly::applyTo(const DateTime& dt, Direction dir) const {
+DateTime Yearly::applyTo(const DateTime& dt, Direction /*dir*/) const {
 	Chronos::TimeElements els(dt.asElements());
 
 	els.Month = month;
